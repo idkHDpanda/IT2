@@ -1,4 +1,4 @@
-//Variabler i javascript
+/*Variabler i javascript
 
 //Deklarere en variabel (opprette), med nøkkelordet let
 let minAlder = 18;
@@ -6,17 +6,17 @@ let minAlder = 18;
 let minAlder = 99;
 //Variabel navn, tilordningsoperatoren, verdi (Gir et bestemt navn til et verdi)
 
-/*minAlder = minAlder + 1
+minAlder = minAlder + 1
 
 const favorittLag = 24
 ittLag = 66;
 
-kan ikke gjøre dette
+//kan ikke gjøre dette
 
 const = for å ikke oppdatere
 let = for å oppdatere
 
-kan ikke ha flere "let" med minAlder fordi det allerede har blitt definert en variabel med det navnet
+//kan ikke ha flere "let" med minAlder fordi det allerede har blitt definert en variabel med det navnet
 
 windowWidth, windowHeight
 
@@ -42,7 +42,7 @@ function draw() {
 lager en stjerne hver sekund, innebygd variabel fra p5js (plusser med 1 hver gang)
 console.log(frameCount);
 
-forandrer på verdiene til stjerne/legger til
+//forandrer på verdiene til stjerne/legger til
   stjerne.x = random(0,width);
   stjerne.y = random(0,height);
   stjerne.r = random(0,255);
@@ -73,8 +73,8 @@ function draw() {
 
 
 
-tegneprogram (større sirkler mot høyre)
-endrer farge etter klikk
+//tegneprogram (større sirkler mot høyre)
+//endrer farge etter klikk
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(200);
@@ -95,5 +95,4 @@ function draw() {
 
 
 med bilder
-
 */
