@@ -56,7 +56,6 @@ forandrer på verdiene til stjerne/legger til
 
 
 
-
 Ny sketch (plassering av mus endrer og holder farge)
 mappe det 0 er sort 255 er hvitt (over blir hvitt)
 gå fra 0-255 enn 0-500
@@ -73,5 +72,28 @@ function draw() {
 }
 
 
+
+tegneprogram (større sirkler mot høyre)
+endrer farge etter klikk
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  background(200);
+}
+
+function draw() {
+  let nyX = map(mouseX,0,500,0,100);
+
+    circle(mouseX,mouseY,mouseX);
+      console.log(mouseX);
+
+  if(mouseIsPressed){
+    fill(random(0,255),random(0,255),random(0,255));
+    background(200);
+    }
+}
+
+
+
+med bilder
 
 */
