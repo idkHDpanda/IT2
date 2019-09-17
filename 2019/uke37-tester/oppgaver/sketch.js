@@ -1,4 +1,4 @@
-/*
+/*/
 //OPPGAVE 1 (bytte mellom farger med posisjonen av musen)
 function setup() {
   // put setup code here
@@ -23,7 +23,7 @@ function draw() {
 */
 
 
-/*
+
 //OPPGAVE 2 (tegninger av firgurer på bestemte områder)
 // Oppretter to variabler x og y. Jeg trenger ikke gi de en verdi, fordi det skal jeg gjøre i draw.
 let x;
@@ -54,7 +54,7 @@ function draw() {
     triangle(x, y, x+5, y+10, x+10, y); // Tegn trekant
     }
 
-  //else{
+  else{
     // Hvis x er mindre enn halve bredden av canvaset kjøres denne koden:
     // (Legg merke til at jeg ikke har en betingelse her, det er fordi hvis ikke
     // noen av de andre betingelsene er true må x og y være i øverste venstre hjørne)
@@ -66,6 +66,7 @@ function draw() {
 
 
 //OPPGAVE 3 (ball som "bouncer")
+/*
 let x;
 let y;
 
@@ -128,7 +129,7 @@ function draw() {
       y = 0;
       pickColor();
     }
-
+*/
 /*
     if(x + 80 == width || x == 0){
       xspeed = -xspeed;

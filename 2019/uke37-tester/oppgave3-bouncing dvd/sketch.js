@@ -6,6 +6,8 @@ let yspeed;
 
 let dvd;
 
+let r,g,b;
+
 function preload(){
   dvd = loadImage("dvd.png");
 }
@@ -15,35 +17,47 @@ function setup() {
   createCanvas(800, 600);
   x = random(width);
   y = random(height);
-  xspeed = 10;
-  yspeed = 10;
+  xspeed = 5;
+  yspeed = 5;
+  pickColor();
+}
+
+function pickColor(){   //random farge
+  r = random(100, 255)
+  g = random(100, 255)
+  b = random(100, 255)
 }
 
 function draw() {
   // put drawing code here
   background(0);
   //rect(x,y,80,60);
+  tint(r,g,b); //legger til fargen på logoen
   image(dvd,x,y);
 
   x = x + xspeed;
   y = y + yspeed;
 
-  if(x + dvd.width >= width{
+  if(x + dvd.width >= width){
     xspeed = -xspeed;
-    x = width - dvd.width; //noe galt med denne delen av koden
+    x = width - dvd.width;
+    pickColor()
   }
   else if (x <= 0){
     xspeed = -xspeed;
     x = 0;
+    pickColor()
   }
 
 
-  if(y + dvd.height >= height{
+  if(y + dvd.height >= height){
     yspeed = -yspeed;
     y = height - dvd.height;
+    pickColor()
   }
   else if (y <= 0){
     yspeed = -yspeed;
     y = 0;
+    pickColor()
   }
 }
