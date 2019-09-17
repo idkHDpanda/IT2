@@ -1,4 +1,6 @@
 /*
+let variabel (lager en variabel for løkken)
+
 while(betingelse){
   kode som gjennomføres (kjører koden på nytt, om betingelsen fortsatt er sann, mens "if" gjør det bare en gang - legger til fra siste)
 }
