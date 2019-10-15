@@ -28,5 +28,5 @@ tall = Math.floor(Math.random()*20);
     else{
       gjett = Number(prompt("tallet må være mellom 0 og 20"));
     }
-
-alert("du brukte " + forsøk);
+}
+alert("du brukte " + forsøk + " forsøk");
