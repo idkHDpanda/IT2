@@ -1,34 +1,32 @@
+
 let gjett = Number(prompt("hvilken tall tenker jeg på?"));
-let tall;
 let riktig = false;
 
-function setup() {
-  // put setup code here
-  createCanvas(400, 400);
-
-  tall = Math.floor(random(0,100));
+let forsøk = 0;
+tall = Math.floor(Math.random()*20);
 
   while(riktig === false){
-    if(gjett > 100 || gjett < 0){
-      gjett = Number(prompt("tallet må være mellom 0 og 100"));
+    if(gjett > 20 || gjett < 0){
+      gjett = Number(prompt("tallet må være mellom 0 og 20"));
     }
+
     else if(gjett < tall){
       gjett = Number(prompt("for lavt"));
+      forsøk = forsøk + 1
     }
+
     else if(gjett > tall){
       gjett = Number(prompt("for høyt"));
+      forsøk = forsøk + 1
     }
+
     else if(gjett === tall){
       alert("gratulerer")
       riktig = true;
     }
-    else{
-      gjett = Number(prompt("tallet må være mellom 0 og 100"));
-    }
-  }
-}
 
-function draw() {
-  // put drawing code here
-  background(220);
-}
+    else{
+      gjett = Number(prompt("tallet må være mellom 0 og 20"));
+    }
+
+alert("du brukte " + forsøk);
