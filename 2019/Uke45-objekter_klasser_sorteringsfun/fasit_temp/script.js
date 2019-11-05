@@ -1,4 +1,4 @@
-//Oppgave a, b, c
+//Oppgave a, b, c - forenklet mpåte av funksjonell programmering - knytte hendelser til funksjoner
 const inpTemp = document.querySelector("#inpTemp");
 const btnTemp = document.querySelector("#btnTemp");
 const divTemp = document.querySelector(".divTemp");
