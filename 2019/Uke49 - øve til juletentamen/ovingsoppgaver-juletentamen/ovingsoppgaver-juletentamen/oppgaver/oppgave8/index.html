@@ -1,28 +1,33 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <style>
-      body {
-        padding: 0;
-        margin: 0;
-        }
+    <style media="screen">
+      #slideshow{
+        display: none; /* Skjuler slideshowet når nettsiden lastes */
+      }
+      #imgSlide{
+        width: 30%;
+      }
     </style>
-    <script src="p5/p5.js"></script>
-    <script src="p5/addons/p5.dom.js"></script>
-    <script src="p5/addons/p5.sound.js"></script>
   </head>
   <body>
     <div id="app">
-      <img id="imgSp" src="../vedlegg-ovingsoppgaver-juletentamen/sp.png" alt="">
-      <img id="imgMdg" src="../vedlegg-ovingsoppgaver-juletentamen/miljopartiet.png" alt="">
+      <img id="imgSp" src="../vedlegg-ovingsoppgaver-juletentamen/sp.png">
+      <img id="imgMdg" src="../vedlegg-ovingsoppgaver-juletentamen/miljopartiet.png">
       <div id="divInfo">
 
       </div>
+
+      <div id="slideshow">
+        <button id="btnNeste" type="button" name="button">Neste bilde</button>
+        <div>
+          <img id="imgSlide" src="">
+        </div>
+      </div>
     </div>
 
-    <script src="sketch.js"></script>
+    <script src="sketch.js" charset="utf-8"></script>
   </body>
 </html>

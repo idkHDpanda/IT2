@@ -7,5 +7,8 @@ while(tilfeldigtall != 3){
 console.log("Svaret er 3")
 
 for(let i = 0; i < 50; i++){
-  i = i*3;
+  for (let j = 3; j <4; j++){
+    document.write(i*j + " ");
+    console.log(i*j);
+  }
 }

@@ -1,3 +1,4 @@
+
 //a
 let elev = {
   navn: "Anna",
@@ -9,4 +10,4 @@ document.write("<ul><li>Navn: " + elev.navn + "<li>alder: " + elev.alder + "<li>
 
 //c
 elev.favorittfag = "IT";
-document.write("<br>Navn: " + elev.navn + " alder: " + elev.alder + " Favorittfag: " + elev.favorittfag);
+console.log(elev);

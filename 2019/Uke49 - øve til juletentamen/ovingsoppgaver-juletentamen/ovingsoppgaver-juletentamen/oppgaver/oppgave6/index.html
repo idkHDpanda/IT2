@@ -7,7 +7,7 @@
     <style>
       body {
         padding: 0;
-        margin: 0;
+        margin: 10px;
         }
     </style>
     <script src="p5/p5.js"></script>
@@ -15,7 +15,13 @@
     <script src="p5/addons/p5.sound.js"></script>
   </head>
   <body>
-
+    <div id="app">
+      <input id="inpVerdi" type="text" name="" value="" placeholder="Varens verdi">
+      <button id="btnRegn" type="button" name="button">Beregn MVA</button>
+      <div id="divResultat">
+        skriv inn varens verdi og klikk "Beregn MVA"
+      </div>
+    </div>
     <script src="sketch.js"></script>
   </body>
 </html>
