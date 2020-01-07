@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style media="screen">
+      input{
+        margin:10px;
+      }
+
+      body{
+        padding: 50px;
+        background-color:pink;
+      }
+
+      #tarot{
+        width: 200px;
+        margin-left:20px;
+      }
+    </style>
+    <title></title>
+  </head>
+  <body>
+<!--1-->
+  <label for="inp">skriv inn:</label>
+  <input id="inp" type="text" name="" value="">
+  <span id="txt"></span>
+  <div class="">
+
+  </div>
+<!--2-->
+  <!--<input id="inp" type="color" name="" value="">-->
+  <input id="inp" type="date" name="" value="">
+  <input id="inp" type="file" name="" value="">
+  <input id="inp" type="range" name="" value="">
+  <input id="inp" type="number" name="" value="">
+  <div class=""></div>
+
+<!--3-->
+  <input type="text" list="spill" name="" value="" placeholder="velg et spill">
+    <datalist id="spill">
+      <option value="Persona 5"></option>
+      <option value="Nier Automata"></option>
+      <option value="Kingdom hearts 3"></option>
+    </datalist>
+   <div class=""></div>
+
+
+<!--4-->
+  <span><input id="tall1" type="number">+</span>
+  <span><input id="tall2" type="number">=</span>
+  <span id="txtSum"></span>
+
+  <div class=""></div>
+
+  <span><input id="ms" type="number" placeholder="m/s"></span>
+  <span id="km">km/h</span>
+  <div class=""></div>
+
+<!--5-->
+  <div id="bakgrunn">
+    <input id="fargevelger" type="color" name="" value="">
+    <input id="rotasjonsvelger" type="range" min="0" max="360" name="" value="0">
+    <img id="tarot" src="tarot.jpg" alt="">
+  </div>
+
+<!--6-->
+  <div class="">
+    <input id="bredde" type="range" min="0" max="400" name="" value="300">
+    <input id="hoyde" type="range" min="0" max="" name="" value="400">
+    <img id="fisk" src="fisk.jpg" alt="">
+  </div>
+
+  </body>
+  <script src="script.js" charset="utf-8"></script>
+</html>

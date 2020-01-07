@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      img{
+        width:200px;
+      }
+      div{
+        margin:10px;
+      }
+    </style>
+  </head>
+  <body>
+<!--1-->
+    <div class="">
+      <p>Vil du delta i en spørrekonkurranse?</p>
+      <label for=""><input id="ja" type="radio" name="" value="">Ja</label>
+      <label for=""><input id="nei" type="radio" name="" value="">Nei</label>
+      <p id="info"></p>
+    </div>
+
+<!--2-->
+<div class="">
+  <p>Velg farge på fisken</p>
+  <label for=""><input id="blå" type="radio" data-bilde="side 140 blå.png" name="" value="">Blå</label>
+  <label for=""><input id="rød" type="radio" data-bilde="side 140 rød.png" name="" value="">Rød</label>
+  <label for=""><input id="grønn" type="radio" data-bilde="side 140 grønn.png" name="" value="">Grønn</label>
+  <label for=""><input id="gul" type="radio" data-bilde="side 140 gul.png" name="" value="">Gul</label>
+</div>
+<img id="gullfisk" src="" alt="">
+
+<!--3-->
+<div class="">
+  <label for="cbAkseptert">Velger du A?</label>
+  <input id="cbAkseptert" type="checkbox" name="" value="">
+  <span id="cbInfo"></span>
+</div>
+
+<!--4-->
+<div class="">
+  <select id="velgDag" name="">
+    <option value="">velg dag</option>
+    <option value="">mandag</option>
+    <option value="">tirsdag</option>
+    <option value="">onsdag</option>
+    <option value="">torsdag</option>
+    <option value="">fredag</option>
+  </select>
+  <span id="infoDag" ></span>
+</div>
+
+  </body>
+  <script src="script.js" charset="utf-8"></script>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      form{
+        margin:20px;
+      }
+    </style>
+  </head>
+  <body>
+<!--1-->
+    <div class="">
+      <form id="frmBok" action="index.html" method="post">
+        <input type="text" id="forfatter" placeholder="Forfatter" required name="" value="">
+        <input type="text" id="tittel" placeholder="Tittel" required name="" value="">
+        <button type="submit" name="button">Registrer bok</button>
+      </form>
+      <div id="info1"></div>
+    </div>
+
+<!--2-->
+  <div class="">
+    <form id="frmRegistrerTing" action="index.html" method="post">
+      <input type="text" id="inpTing" placeholder="Ting jeg må huske" required name="" value="">
+      <button type="submit" name="button">OK</button>
+      <ul id="huskeliste"></ul>
+    </form>
+  </div>
+
+<!--3-->
+<div class="">
+
+  <form id="frmFlyreise" required action="index.html" method="post">
+    <label for="velgFlyplassUtreise">Fly fra</label>
+    <select id="velgFlyplassUtreise" required name="">
+      <option value="">Velg flyplass</option>
+      <option value="OSL">Oslo</option>
+      <option value="BGO">Bergen</option>
+      <option value="TRD">Trondheim</option>
+    </select>
+    <button type="submit" name="button">Søk og bestill</button>
+  </form>
+
+  <p><label for="inpUtdato">Velg dato for utreise</label>
+  <input type="date" id="inpUtdato" required></p>
+
+  <p><label for="inpReturdato">Velg dato for retur</label>
+  <input type="date" id="inpReturdato" required></p>
+
+  <input type="radio" name="rbgType" value="2" id="rbTR" required data-tekst="Tur/retur">
+  <label for="rbTR">Tur/retur</label>
+  <input type="radio" name="rbgType" value="1" id="rbEnVei" required data-tekst="En vei">
+  <label for="rbEnVei">En vei</label>
+
+  <div id="info"></div>
+</div>
+
+<!--4-->
+<!--5-->
+  </body>
+  <script src="script.js" charset="utf-8"></script>
+</html>
