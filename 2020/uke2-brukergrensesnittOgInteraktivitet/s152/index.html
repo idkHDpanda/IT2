@@ -7,6 +7,10 @@
       form{
         margin:20px;
       }
+
+      #info{
+        margin:10px;
+      }
     </style>
   </head>
   <body>
@@ -30,8 +34,8 @@
   </div>
 
 <!--3-->
+<h2>Skjema for bestilling av en flytur:</h2>
 <div class="">
-
   <form id="frmFlyreise" required action="index.html" method="post">
     <label for="velgFlyplassUtreise">Fly fra</label>
     <select id="velgFlyplassUtreise" required name="">
@@ -41,7 +45,6 @@
       <option value="TRD">Trondheim</option>
     </select>
     <button type="submit" name="button">Søk og bestill</button>
-  </form>
 
   <p><label for="inpUtdato">Velg dato for utreise</label>
   <input type="date" id="inpUtdato" required></p>
@@ -49,16 +52,32 @@
   <p><label for="inpReturdato">Velg dato for retur</label>
   <input type="date" id="inpReturdato" required></p>
 
-  <input type="radio" name="rbgType" value="2" id="rbTR" required data-tekst="Tur/retur">
+  <input type="radio" name="rbgType" value="2" id="rbTR" data-tekst="Tur/retur" required>
   <label for="rbTR">Tur/retur</label>
-  <input type="radio" name="rbgType" value="1" id="rbEnVei" required data-tekst="En vei">
+  <input type="radio" name="rbgType" value="1" id="rbEnVei" data-tekst="En vei" required>
   <label for="rbEnVei">En vei</label>
+
+  <p><label for="inpAntVoksne">Antall reisende:</label></p>
+  <input type="number" id="inpAntVoksne" name="" min="1" value="1" max="10" required>
+  <input type="number" id="inpAntBarn" name="" min="0" value="0" max="10" required>
+
+  <p><label for="cbLeiebil">Tilbud på leiebil:</label></p>
+  <input type="checkbox" id="cbLeiebil" name="" value="">
+  <p><label for="cbHotell">Tilbud på hotell:</label></p>
+  <input type="checkbox" id="cbHotell" name="" value="">
+</form>
 
   <div id="info"></div>
 </div>
 
 <!--4-->
+<h2>Registrer epost:</h2>
+<div id="">
+
+</div>
 <!--5-->
+<h2>Bestilling av bord på en restaurant:</h2>
+
   </body>
   <script src="script.js" charset="utf-8"></script>
 </html>

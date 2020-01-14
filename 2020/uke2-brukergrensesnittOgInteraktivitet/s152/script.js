@@ -21,17 +21,37 @@ frmRegistrerTing.onsubmit = function(evt){
 }
 
 //3
-let info = document.querySelector("#info");
-let frmFlyreise = document.querySelector("#frmFlyreise");
-let velgFlyplassUtreise = document.querySelector("#velgFlyplassUtreise");
-let valgtType = document.querySelector("#input[name=rbgType]:checked");
 frmFlyreise.onsubmit = function (evt) {
+  let info = document.querySelector("#info");
+  let frmFlyreise = document.querySelector("#frmFlyreise");
+  let velgFlyplassUtreise = document.querySelector("#velgFlyplassUtreise");
+  let valgtType = document.querySelector("input[name=rbgType]:checked");
+
+  let inpAntVoksne = document.querySelector("#inpAntVoksne");
+  let inpAntBarn = document.querySelector("#inpAntBarn");
+
+  let cbHotell = document.querySelector("#cbHotell");
+  let cbLeiebil = document.querySelector("#cbLeiebil");
+
   evt.preventDefault();
   info.innerHTML = `Utreise fra: ${velgFlyplassUtreise.value}<br>`;
 
   info.innerHTML += `Utreise: ${inpUtdato.value} <br>`;
   info.innerHTML += `Retur: ${inpReturdato.value} <br>`;
-  
-  info.innerHTML += `Reisetype: ${valgtType.value} -`
+
+  info.innerHTML += `Reisetype: ${valgtType.value} -`;
   info.innerHTML += valgtType.getAttribute("data-tekst");
+
+  info.innerHTML += ` <br> Antall voksne: ${inpAntVoksne.value}</br>`;
+  info.innerHTML += `Antall barn: ${inpAntBarn.value} <br>`;
+
+  if(cbLeiebil.checked){
+    info.innerHTML += `Kunden ønsker tilbud på leiebil`;
+  }
+  if(cbHotell.checked){
+    info.innerHTML += `Kunden ønsker tilbud på hotell`;
+  }
 }
+
+//4
+//5
